@@ -1,0 +1,18 @@
+const browserName="Chrome";
+function getBrowserName()
+{
+    if(browserName==="Chrome")
+    {
+    var name="Edge" //hoisted
+    let browserName="Firefox" //It is a block scope accessible inside block
+    console.log(browserName)
+    }
+console.log(browserName) //outside a block
+console.log(name) //outside a block
+
+}
+
+
+    
+
+getBrowserName()
